@@ -1,0 +1,21 @@
+RandomForestClassifier
+score_test =  90.27950310559007
+score_train =  100.0
+
+GradientBoostingClassifier
+score_test =  89.96894409937887
+score_train =  94.15422885572139
+
+XGBClassifier
+score_test =  88.7888198757764
+score_train =  100.0
+
+AdaBoostClassifier
+score_test =  89.22360248447205
+score_train =  90.67164179104478
+
+Ensemble model
+y_pred = v_clf.predict(x_test)
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+print(accuracy_score(y_test, y_pred)*100)
